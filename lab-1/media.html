@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Favorite Pictures</title>
+
+  <style>
+    body {
+     background: linear-gradient(135deg, #fff0f5, #ffe4ef);
+    }
+    #header {
+      background-color: #d66b9c;
+      padding: 20px;
+      text-align: center;
+    }
+    #title {
+      color: #fff5fa ;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: 700;
+      text-shadow: 1px 2px 3px rgba(90, 58, 74, 0.3);
+      margin: 0;
+    }
+    #menu {
+      background-color: #ffe4ef ;
+      padding: 10px;
+      border-bottom: 2px solid #f3b6cf;
+    }
+    #menu a {
+      color: #b83b72;
+      font-weight: bold;
+      margin: 0 8px;
+    }
+    #menu a:hover {
+      color: #d66b9c;
+      background-color: #fff0f5;
+      padding: 5px;
+    }
+    #iframe {
+      width: 100%;
+      height: 40px;
+      border: none;
+    }
+    #content {
+      background-color: #ffffff;
+      border-radius: 15px;
+      color: #5a3a4a;
+      box-shadow: 0 4px 12px rgba(90, 58, 74, 0.15);
+      padding: 20px;
+      min-height: 200px;
+      text-align: center;
+    }
+    #tblpictures {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px auto;
+      overflow: hidden;
+    }
+    #tblpictures th {
+      background-color: #f3b6cf;
+      color: #5a3a4a;
+      padding: 12px;
+    }
+    #tblpictures td {
+      padding: 20px;
+      border: 1px solid #f3b6cf;
+    }
+    #tblpictures img {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(90, 58, 74, 0.2);
+      transition: transform 0.3s ease;
+    }
+    #tblpictures img:hover {
+      transform: scale(1.05);
+    }
+    #content p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #8a526b;
+    }
+    #welcome {
+      margin-bottom: 10px;
+    }
+    #footer {
+      background-color: #d66b9c ;
+      color: #fff5fa;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+    #footnote {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .flowers {
+      animation: float 3s ease-in-out infinite;
+    }
+    #footnote {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.flowers {
+  animation: float 3s ease-in-out infinite;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+  </style>
+</head>
+
+<body>
+
+<div id="header">
+  <div class="flowers">🌸 🌷 🌸</div>
+  <h1 id="title">My Favorite Pictures</h1>
+</div>
+
+<div id="menu">
+  <iframe id="iframe" src="menu.html" title="Menu"></iframe>
+</div>
+
+<div id="content">
+
+  <table id="tblpictures" border="1" width="100%" cellpadding="20" cellspacing="5">
+
+    <tr>
+      <th colspan="2">Pictures 📸</th>
+    </tr>
+
+    <tr>
+      <th>Static</th>
+      <th>Animated</th>
+    </tr>
+
+    <tr>
+      <td align="center">
+        <img src="picture.jpg" width="300">
+      </td>
+
+      <td align="center">
+        <img src="animation.gif" width="300">
+      </td>
+    </tr>
+
+    <tr>
+      <th>Music</th>
+      <th>Video</th>
+    </tr>
+
+    <tr>
+      <td align="center">
+        <audio controls>
+          <source src="music.mp3" type="audio/mpeg">
+        </audio>
+      </td>
+
+      <td align="center">
+        <video controls width="300">
+          <source src="video.mp4" type="video/mp4">
+        </video>
+      </td>
+    </tr>
+
+  </table>
+
+</div>
+
+<div id="footer">
+  <span id="footnote">Web Programming @ UKM ™</span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!--
+Matric Number: A220225
+Name: Nur Farah Ashikin Binti Abdullah
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biodata</title>
+</head>
+<body>
+<h1>Biodata Form</h1>
+<hr>
+<form action="http://lrgs.ftsm.ukm.my/users/a123456/lab-2/validate_biodata.php" method="post" enctype="multipart/form-data">
+  <table border="1" cellpadding="10">
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="name" placeholder="Insert your name" autofocus required pattern="^[A-Z][a-z]+(?: [A-Z][a-z]+)*$"></td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" name="age" min="0" max="100" step="1" required></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <br>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+      </td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><textarea name="address" cols="50" rows="5" placeholder="Insert your address" required></textarea></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="email" name="email" placeholder="Insert your email" required pattern="[^@]+@[^@]*ukm[^@]*"></td>
+    </tr>
+    <tr>
+      <td>Date of Birth:</td>
+      <td><input type="date" name="dob" required></td>
+    </tr>
+    <tr>
+      <td>Height:</td>
+      <td><input type="range" name="height" id="heightId" min = "100" max = "200" value = "150" oninput="outputId.value = heightId.value"><output id="outputId">150</output>cm</td>
+    </tr>
+    <tr>
+      <td>Tel:</td>
+      <td><input type="tel" name="phone" placeholder="+60#########" pattern="(\+60|0060)[0-9]+" required></td>
+    </tr>
+    <tr>
+      <td>My Favorite Color:</td>
+      <td><input type="color" name="color" value="#008000" required></td>
+    </tr>
+    <tr>
+      <td>Fb/TW/IG:</td>
+      <td><input type="url" name="fbtwig" placeholder="Insert the URL" required></td>
+    </tr>
+    <tr>
+      <td>My Face Photo:</td>
+      <td><input type="file" name="photo" accept=".jpg, .jpeg, .png, .gif" required></td>
+    </tr>
+    <tr>
+      <td>My University:</td>
+      <td>
+        <select name="university" required>
+          <option value="UKM">Universiti Kebangsaan Malaysia</option>
+          <option value="UM">Universiti Malaya</option>
+          <option value="UPM">Universiti Putra Malaysia</option>
+          <option value="USM">Universiti Sains Malaysia</option>
+          <option value="UTM">Universiti Teknologi Malaysia</option>
+          <option value="UTP">Universiti Teknologi PETRONAS</option>
+          <option value="UiTM">Universiti Teknologi MARA</option>
+          <option value="UMS">Universiti Malaysia Sabah</option>
+          <option value="USIM">Universiti Sains Islam Malaysia</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+<hr>
+<input type="hidden" name="matricnum" value="a220225">
+<button type="submit" name="biodata_form">Submit My Biodata</button>
+<input type="reset" value="Reset">
+</form>
+ 
+</body>
+</html>
